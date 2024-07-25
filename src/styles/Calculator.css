@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+.calculator {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  background-color: #151515;
+  font-family: 'Archivo';
+}
+
+@media screen and (max-width: 1024px) {
+  .calculator {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .calculator {
+    flex-direction: column;
+    height: 800px
+  }
+  .display, .keypad {
+    width: 100%;
+    height: 400px;
+  }
+  .display .input {
+    display: flex;
+    flex-direction: column;
+  }
+  .display .input p:first-of-type {
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .calculator {
+    height: 600px
+  }
+  .display, .keypad {
+    height: 300px;
+  }
+  .keypad button {
+    font-size: 24px;
+  }
+}
