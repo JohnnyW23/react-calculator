@@ -17,31 +17,101 @@ button {
 button:active {
   scale: .9;
 }
-.dark {
+
+.dark-theme .dark {
   color: #777;
 }
-.dark:hover {
-  background-color: #777;
-  color: #fff;
-}
-.colored {
+.dark-theme .colored {
   color: #09a;
 }
-.colored:hover {
+.dark-theme .neutral {
+  color: #fff;
+}
+.dark-theme .equal {
   background-color: #09a;
   color: #fff;
 }
-.neutral {
+
+.light-theme .dark {
+  color: #555;
+}
+.light-theme .colored {
+  color: #f5f;
+}
+.light-theme .neutral {
+  color: #222;
+}
+.light-theme .equal {
+  background-color: #f5f;
   color: #fff;
 }
-.neutral:hover {
-  background-color: #333;
+
+@media screen and (min-width: 1025px) {
+  .dark-theme .dark:hover {
+    background-color: #777;
+    color: #fff;
+  }
+  .dark-theme .colored:hover {
+    background-color: #09a;
+    color: #fff;
+  }
+  .dark-theme .neutral:hover {
+    background-color: #333;
+  }
+  .dark-theme .equal:hover {
+    background-color: #fff;
+    color: #09a;
+  }
+
+  .light-theme .dark:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  .light-theme .colored:hover {
+    background-color: #f5f;
+    color: #fff;
+  }
+  .light-theme .neutral:hover {
+    background-color: #888;
+    color: #fff;
+  }
+  .light-theme .equal:hover {
+    background-color: #909;
+    color: #fff;
+  }
 }
-.equal {
-  background-color: #09a;
-  color: #fff;
-}
-.equal:hover {
-  background-color: #fff;
-  color: #09a;
+
+@media screen and (max-width: 1024px) {
+  .dark-theme .dark:active {
+    background-color: #777;
+    color: #fff;
+  }
+  .dark-theme .colored:active {
+    background-color: #09a;
+    color: #fff;
+  }
+  .dark-theme .neutral:active {
+    background-color: #333;
+  }
+  .dark-theme .equal:active {
+    background-color: #fff;
+    color: #09a;
+  }
+
+  .light-theme .dark:active {
+    background-color: #555;
+    color: #fff;
+  }
+  .light-theme .colored:active {
+    background-color: #f5f;
+    color: #fff;
+  }
+  .light-theme .neutral:active {
+    background-color: #888;
+    color: #fff;
+  }
+  .light-theme .equal:active {
+    background-color: #909;
+    color: #fff;
+  }
 }

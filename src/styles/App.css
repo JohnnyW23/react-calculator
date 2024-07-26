@@ -1,4 +1,55 @@
 .app {
   padding: 20px 0;
   user-select: none;
+  background-color: #1f1f1f;
+}
+
+.dark-theme .logo {
+  filter: hue-rotate(0deg);
+}
+.light-theme .logo {
+  filter: hue-rotate(150deg);
+}
+
+.dark-theme .set-theme {
+  color: #000;
+}
+.dark-theme .calculator {
+  background-color: #151515;
+}
+.dark-theme .input {
+  background-color: #101010;
+}
+.dark-theme .input::-webkit-scrollbar-track {
+  background-color: #701919;
+}
+.dark-theme .input::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 10px;
+  border: 1px solid #111;
+}
+.dark-theme .input .active {
+  text-shadow: 0 0 5px #0ff;
+}
+
+.light-theme .set-theme {
+  color: #999;
+}
+.light-theme .calculator {
+  background-color: #fff;
+}
+.light-theme .input {
+  background-color: #ccc;
+}
+.light-theme .input::-webkit-scrollbar-track {
+  background-color: #888;
+}
+.light-theme .input::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 10px;
+  border: 1px solid #888;
+}
+.light-theme .input .active {
+  color: #333;
+  text-shadow: 0 0 5px #000;
 }

@@ -4,6 +4,7 @@ import Calculator from './Calculator'
 import '../styles/App.css'
 
 export default function App(){
+  const [theme, setTheme] = useState('dark-theme');
   const [animation, setAnimation] = useState({infinity: false, style: {'animation': 'spin 20s linear 0s infinite'}});
 
   const handleAnimation = (infinity) => {
@@ -15,13 +16,22 @@ export default function App(){
     }
   }
 
+  const handleTheme = () => {
+    if(theme == 'dark-theme')
+      setTheme('light-theme')
+    else
+      setTheme('dark-theme')
+  }
+
   return (
-    <div className='app'>
+    <div className={'app ' + theme}>
       <Title
-        animationStyle={animation.style} />
+        animationStyle={animation.style}
+      />
       <Calculator
         infinity={animation.infinity}
         handleAnimation={(value) => {handleAnimation(value)}}
+        handleTheme={() => {handleTheme()}}
       />
     </div>
   )
